@@ -1,0 +1,5 @@
+corr.ai.framework.security.config.CorrSecurityRpcAutoConfiguration
+corr.ai.framework.security.config.CorrSecurityAutoConfiguration
+corr.ai.framework.security.config.CorrWebSecurityConfigurerAdapter
+corr.ai.framework.operatelog.config.CorrOperateLogConfiguration
+corr.ai.framework.operatelog.config.CorrOperateLogRpcAutoConfiguration

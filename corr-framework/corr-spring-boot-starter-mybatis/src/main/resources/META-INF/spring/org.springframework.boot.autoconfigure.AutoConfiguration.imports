@@ -1,0 +1,3 @@
+corr.ai.framework.datasource.config.CorrDataSourceAutoConfiguration
+corr.ai.framework.mybatis.config.CorrMybatisAutoConfiguration
+corr.ai.framework.translate.config.CorrTranslateAutoConfiguration

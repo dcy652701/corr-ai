@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>corr-module-metadata</artifactId>
+        <groupId>corr.ai</groupId>
+        <version>${revision}</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>corr-module-metadata-biz</artifactId>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
+
+    <dependencies>
+
+<!--        <dependency>-->
+<!--            <groupId>corr.ai</groupId>-->
+<!--            <artifactId>corr-spring-boot-starter-oss</artifactId>-->
+<!--        </dependency>-->
+
+        <dependency>
+            <groupId>com.qcloud</groupId>
+            <artifactId>cos_api</artifactId>
+            <version>5.6.227</version>
+        </dependency>
+
+        <dependency>
+            <groupId>corr.ai</groupId>
+            <artifactId>corr-spring-boot-starter-env</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>corr.ai</groupId>
+            <artifactId>corr-module-system-api</artifactId>
+            <version>${revision}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>corr.ai</groupId>
+            <artifactId>corr-module-infra-api</artifactId>
+            <version>${revision}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>corr.ai</groupId>
+            <artifactId>corr-module-metadata-api</artifactId>
+            <version>${revision}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>corr.ai</groupId>
+            <artifactId>corr-spring-boot-starter-biz-data-permission</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>corr.ai</groupId>
+            <artifactId>corr-spring-boot-starter-biz-tenant</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>corr.ai</groupId>
+            <artifactId>corr-spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>corr.ai</groupId>
+            <artifactId>corr-spring-boot-starter-security</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>corr.ai</groupId>
+            <artifactId>corr-spring-boot-starter-mybatis</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>corr.ai</groupId>
+            <artifactId>corr-spring-boot-starter-redis</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>corr.ai</groupId>
+            <artifactId>corr-spring-boot-starter-rpc</artifactId>
+        </dependency>
+
+        <!-- Registry 注册中心相关 -->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+        </dependency>
+
+        <!-- Config 配置中心相关 -->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>corr.ai</groupId>
+            <artifactId>corr-spring-boot-starter-mq</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>corr.ai</groupId>
+            <artifactId>corr-spring-boot-starter-excel</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>corr.ai</groupId>
+            <artifactId>corr-spring-boot-starter-monitor</artifactId>
+        </dependency>
+
+    </dependencies>
+    <build>
+        <!-- 设置构建的 jar 包名 -->
+        <finalName>${project.artifactId}</finalName>
+        <plugins>
+            <!-- 打包 -->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>${spring.boot.version}</version>
+                <configuration>
+                    <fork>true</fork>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal> <!-- 将引入的 jar 打入其中 -->
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

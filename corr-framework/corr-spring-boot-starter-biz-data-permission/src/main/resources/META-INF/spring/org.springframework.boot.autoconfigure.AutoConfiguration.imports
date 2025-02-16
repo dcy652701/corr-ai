@@ -1,0 +1,3 @@
+corr.ai.framework.datapermission.config.CorrDataPermissionAutoConfiguration
+corr.ai.framework.datapermission.config.CorrDeptDataPermissionAutoConfiguration
+corr.ai.framework.datapermission.config.CorrDataPermissionRpcAutoConfiguration

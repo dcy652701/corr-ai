@@ -1,0 +1,2 @@
+org.springframework.boot.env.EnvironmentPostProcessor=\
+    corr.ai.framework.env.config.EnvEnvironmentPostProcessor

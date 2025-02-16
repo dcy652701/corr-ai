@@ -1,0 +1,6 @@
+corr.ai.framework.apilog.config.CorrApiLogAutoConfiguration
+corr.ai.framework.jackson.config.CorrJacksonAutoConfiguration
+corr.ai.framework.swagger.config.CorrSwaggerAutoConfiguration
+corr.ai.framework.web.config.CorrWebAutoConfiguration
+corr.ai.framework.apilog.config.CorrApiLogRpcAutoConfiguration
+corr.ai.framework.banner.config.CorrBannerAutoConfiguration

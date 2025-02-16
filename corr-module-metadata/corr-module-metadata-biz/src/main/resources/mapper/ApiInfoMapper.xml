@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="corr.ai.module.metadata.dal.mysql.data.ApiInfoMapper">
+
+    <select id="getApiIdList" resultType="corr.ai.module.metadata.dal.dataobject.data.ApiNameIdDO">
+        select distinct api_name,api_id from corr_api_info where symbol=#{sym} and tenant_id = 1 and deleted = false
+    </select>
+
+</mapper>

@@ -1,0 +1,2 @@
+corr.ai.framework.redis.config.CorrRedisAutoConfiguration
+corr.ai.framework.redis.config.CorrCacheAutoConfiguration

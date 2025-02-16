@@ -1,0 +1,4 @@
+corr.ai.framework.idempotent.config.CorrIdempotentConfiguration
+corr.ai.framework.lock4j.config.CorrLock4jConfiguration
+corr.ai.framework.ratelimiter.config.CorrRateLimiterConfiguration
+corr.ai.framework.signature.config.CorrApiSignatureAutoConfiguration
