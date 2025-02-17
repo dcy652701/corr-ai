@@ -1,8 +1,6 @@
 # CorrAi
 
-An open-source platform for Quantitative Trading.
-
-It is desinged for traditional traders to make it easier to create and deploy a quantitative trading strategy. And...We are going to add AI Abilities for CorrAi, to discover more strategies.
+At Movement, our AI-powered trading agents deliver a transparent and decentralized trading experience. Every robot’s trading activity is recorded on-chain, ensuring public and verifiable performance data. With unified digital identities across multiple chains, managing and tracking robots is seamless. Plus, our no-code backtesting and AI-assisted strategy tools let you optimize your trading ideas without the technical hassle. Hire proven trading robots in our dynamic marketplace and benefit from fair, open collaboration.
 
 # Start Guide
 
